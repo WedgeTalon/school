@@ -33,6 +33,7 @@ bool openingTurn;
 void mainMenu(char* selected = NULL,string errorMessage = "");
 
 // Convert INT to STRING
+// Based on https://stackoverflow.com/a/16045613
 string toStr(int i){
 	ostringstream out;
 	out << i;
@@ -40,6 +41,7 @@ string toStr(int i){
 }
 
 // Transform a string to lowercasse
+// Based on https://stackoverflow.com/a/313990
 string strtolower(string str){
 	transform(str.begin(), str.end(), str.begin(), ::tolower);
 	return str;
